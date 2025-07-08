@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Application Form</title>
-    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -17,7 +17,7 @@
             padding: 20px;
             box-sizing: border-box;
         }
-       
+        /* Custom styles for better focus and appearance */
         input:focus, select:focus {
             outline: none;
             box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5); /* Blue focus ring */
@@ -35,14 +35,14 @@
                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out">
             </div>
 
-            
+            <!-- Email -->
             <div class="mb-5">
                 <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email <span class="text-red-500">*</span></label>
                 <input type="email" id="email" name="email" required
                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out">
             </div>
 
-           
+            <!-- Gender -->
             <div class="mb-5">
                 <label class="block text-gray-700 text-sm font-medium mb-2">Gender <span class="text-red-500">*</span></label>
                 <div class="flex items-center space-x-6">
@@ -64,7 +64,8 @@
                 </div>
             </div>
 
-          
+            <!-- Laptop Brands -->
+            <div class="mb-5">
                 <label for="laptop" class="block text-gray-700 text-sm font-medium mb-2">Preferred Laptop Brand</label>
                 <select id="laptop" name="laptop"
                         class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out">
@@ -75,28 +76,28 @@
                 </select>
             </div>
 
-           
+            <!-- Age -->
             <div class="mb-5">
                 <label for="age" class="block text-gray-700 text-sm font-medium mb-2">Age <span class="text-red-500">*</span></label>
                 <input type="number" id="age" name="age" required min="18" max="99"
                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out">
             </div>
 
-           
+            <!-- Date of Birth -->
             <div class="mb-5">
                 <label for="dob" class="block text-gray-700 text-sm font-medium mb-2">Date of Birth <span class="text-red-500">*</span></label>
                 <input type="date" id="dob" name="dob" required
                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out">
             </div>
 
-            
+            <!-- Password -->
             <div class="mb-5">
                 <label for="password" class="block text-gray-700 text-sm font-medium mb-2">Password <span class="text-red-500">*</span></label>
                 <input type="password" id="password" name="password" required
                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out">
             </div>
 
-           
+            <!-- Portfolio URL -->
             <div class="mb-6">
                 <label for="portfolio" class="block text-gray-700 text-sm font-medium mb-2">Portfolio URL</label>
                 <input type="url" id="portfolio" name="portfolio"
@@ -104,7 +105,7 @@
                        placeholder="e.g., https://www.yourportfolio.com">
             </div>
 
-            
+            <!-- Submit Button -->
             <button type="submit"
                     class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 ease-in-out shadow-lg">
                 Submit Application
